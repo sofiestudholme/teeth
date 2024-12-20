@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 
-    <title>HEI DIO</title>
+    <title>HEI·DIO</title>
 </head>
 <body>
     <div id="navbar">
-        <div id = left-nav>HEI DIAO</div>
+        <div id = left-nav>HEI· DIAO</div>
         <button class="menu-button" id="menuButton">  
         <div class="hamburger" id="hamburgerMenu">
             <div class="line"></div>
@@ -29,20 +29,18 @@
     </div>
 
     
-
-    <div id="img-wrapper"><img src = "pearlz_wide.png"></div>
-    
-   
-
-    <div id="pearlz">
-        <div id="text">
-            <h3>The Pointy Pearlz Collection</h3>
-            <h4>AVAILABLE NOW</h4>
-        </div>
-        <div id="buttons">
-            <button>Buy Now</button>
-            <button>About</button>
-        </div>
+    <div class="toppannel">
+      <div id="img-wrapper"><img src = "pearlz_wide.png"></div>
+      <div id="pearlz">
+          <div id="text">
+              <h3>The Pointy Pearlz Collection</h3>
+              <h4>AVAILABLE NOW</h4>
+          </div>
+          <div id="buttons">
+              <button class = button><span>About</span></button>
+              <button class = button><span>Buy now</span></button>
+          </div>
+      </div>
     </div>
 
     <script>
@@ -59,6 +57,10 @@
         //   popupMenu.classList.add('active');
         // });
     
+        menuButton.addEventListener('click', () => {
+          popupMenu.classList.add('active');
+        });
+
         closeMenu.addEventListener('click', () => {
           popupMenu.classList.remove('active');
         });
